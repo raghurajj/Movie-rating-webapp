@@ -8,6 +8,8 @@ import Details from "./components/Details";
 import MovieList from "./components/MovieList";
 import Default from "./components/Default";
 import AddMovies from "./components/AddMovies";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Route  path='/addMovies' component={AddMovies} />
       <Route  component={Default} />   
       </Switch>
+      <Footer/>
     </React-Fragment>
   );
 }

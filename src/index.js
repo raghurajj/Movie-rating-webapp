@@ -5,6 +5,10 @@ import App from './App';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {MovieProvider} from "./Context";
 import * as serviceWorker from './serviceWorker';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-social/bootstrap-social.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
 <MovieProvider>

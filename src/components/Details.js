@@ -68,9 +68,14 @@ export default class Details extends Component {
                                          actors.map( id=> {
                                       return ( 
                                     <div> 
-                                        
-                                      <h6><strong>Name:</strong> {users.users[id].first_name} {users.users[id].last_name} , <strong> Age:</strong> {users.users[id].age}</h6>
+                                      <div class="image">  
+                                      <img src={users.users[id].profile_pic} alt="user pic"/> 
+                                      
+                                      <div class="info">
+                                      <h6><strong>Name:</strong> {users.users[id].first_name} {users.users[id].last_name}  <strong> Age:</strong> {users.users[id].age}</h6>
                                       </div>
+                                      </div>
+                                      </div> 
                                       );
                                         }
                                    
@@ -79,9 +84,14 @@ export default class Details extends Component {
                                     <br/>
                                      <div>
                                     <h4><strong>director:</strong></h4>
-                                   
+                                    <div class="imagedir">  
+                                      <img src={users.users[director_id].profile_pic} alt="user pic"/> 
+                                      
+                                      <div class="info">
                                        <h6><strong>Name:</strong> {users.users[director_id].first_name} {users.users[director_id].last_name} , <strong> Age:</strong> {users.users[director_id].age}</h6>
                                     </div>  
+                                    </div>
+                                    </div>
                                     <br/>
                                     <br/>
                                    <h5><strong>Rate this Movie:</strong></h5>
@@ -159,6 +169,60 @@ const DetailsWrapper=styled.div`
     color:black;
     text-shadow:2px 0px 2px grey; 
     transform:scale(1.3);
+}
+.image{
+    height:150px;
+    width:150px;
+    position:relative;
+    float:left;
+    margin:5px;
+    
+}
+
+.image>img{
+    height:150px;
+    width:100%;
+    overflow:hidden;
+    display:block;
+}
+
+.info{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    color: white;
+    opacity:0;
+    transition: .5s ease;
+    background-color: grey;
+    text-align:center;
+    padding-top:35px;
+}
+
+.image:hover .info{
+    opacity:1;
+}
+
+
+
+
+.imagedir{
+    height:150px;
+    width:150px;
+    position:relative;
+    margin:5px;
+}
+
+.imagedir>img{
+    height:150px;
+    width:100%;
+    overflow:hidden;
+}
+.imagedir:hover .info{
+    opacity:1;
 }
 
 

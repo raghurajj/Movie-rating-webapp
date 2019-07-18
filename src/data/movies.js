@@ -13,7 +13,7 @@ export default {
 				
 			],
 			"avg_rating": "3.5",
-			"description": "Some big string"
+			"description": " Lorem ipsum dolor sit amet, tincidunt cursus morbi bibendum qui mollis, et morbi aliquam pede non cras est. Mus in platea non urna. Hendrerit dolor ornare in dolor sit, ac eget bibendum. Elit odio amet dictum integer in conubia. Mi orci nam interdum nulla quis, mauris nullam pulvinar nibh torquent, lacinia eget cras elit accumsan consequatur aliquam, aliquam purus natoque nec id placerat. Metus sapien justo tortor, velit libero consectetuer vulputate. Inceptos pede necessitatibus, luctus pellentesque eleifend sed penatibus augue, libero ante risus, at viverra quis a sed rutrum. "
 		},
 		{
             "movie_id": 2,
@@ -26,7 +26,7 @@ export default {
 				2
 			],
 			"avg_rating": "4.6",
-			"description": "Some big string"
+			"description": "Lorem ipsum dolor sit amet, tincidunt cursus morbi bibendum qui mollis, et morbi aliquam pede non cras est. Mus in platea non urna. Hendrerit dolor ornare in dolor sit, ac eget bibendum. Elit odio amet dictum integer in conubia. Mi orci nam interdum nulla quis, mauris nullam pulvinar nibh torquent, lacinia eget cras elit accumsan consequatur aliquam, aliquam purus natoque nec id placerat. Metus sapien justo tortor, velit libero consectetuer vulputate. Inceptos pede necessitatibus, luctus pellentesque eleifend sed penatibus augue, libero ante risus, at viverra quis a sed rutrum."
 		},
 		{
             "movie_id": 3, 
@@ -40,7 +40,7 @@ export default {
 				4
 			],
 			"avg_rating": "4.4",
-			"description": "Some big string"
+			"description": "Lorem ipsum dolor sit amet, tincidunt cursus morbi bibendum qui mollis, et morbi aliquam pede non cras est. Mus in platea non urna. Hendrerit dolor ornare in dolor sit, ac eget bibendum. Elit odio amet dictum integer in conubia. Mi orci nam interdum nulla quis, mauris nullam pulvinar nibh torquent, lacinia eget cras elit accumsan consequatur aliquam, aliquam purus natoque nec id placerat. Metus sapien justo tortor, velit libero consectetuer vulputate. Inceptos pede necessitatibus, luctus pellentesque eleifend sed penatibus augue, libero ante risus, at viverra quis a sed rutrum."
 		}
 	]
 }

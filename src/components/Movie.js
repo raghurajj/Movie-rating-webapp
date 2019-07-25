@@ -53,6 +53,7 @@ const MovieContainer=styled.div`
 .card {
     border:transparent;
     transition:all 1s linear;
+    height:500px;
 }
 
 .card-footer {

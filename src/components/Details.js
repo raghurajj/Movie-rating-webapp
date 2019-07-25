@@ -32,7 +32,7 @@ export default class Details extends Component {
                     //console.log(users.users[{director_id}]);
                     const {rtng}=avg_rating;
                     return (
-                        <DetailsWrapper >
+                    <DetailsWrapper >
                         <div className="container py-5">
                             <div className="row">
                                 <div className="title col-10 mx-auto text-center text-slanted text-blue my-5">
@@ -49,8 +49,17 @@ export default class Details extends Component {
                                 </div>
 
 
-                                <div className="details col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                    <h6><strong>Date Of Release:</strong>{release_date}</h6>
+                            <div className="details col-10 mx-auto col-md-6 my-3 text-capitalize">
+                            <h3><strong>About Movie</strong></h3>
+                                    <p>{description}</p>
+
+
+                            </div>
+                            </div>
+                            
+                            <div className="row">
+                                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
+                                <h6><strong>Date Of Release:</strong>{release_date}</h6>
                                     <h5><strong>Average Rating:</strong></h5>
                                     <StarRatings
                                     rating={parseFloat(avg_rating)}
@@ -63,6 +72,7 @@ export default class Details extends Component {
                                     <br/>
                                     <br/>
                                     <h4><strong>Actors:</strong></h4>
+                                    <div className="row">
                                      {
                                          
                                          actors.map( id=> {
@@ -81,9 +91,12 @@ export default class Details extends Component {
                                    
                                    ) 
                                     }
+                                    </div>
+                                    
                                     <br/>
-                                     <div>
+                                    <br/>
                                     <h4><strong>director:</strong></h4>
+                                    <div className="row">
                                     <div class="imagedir">  
                                       <img src={users.users[director_id].profile_pic} alt="user pic"/> 
                                       
@@ -94,6 +107,7 @@ export default class Details extends Component {
                                     </div>
                                     <br/>
                                     <br/>
+                                <div>  
                                    <h5><strong>Rate this Movie:</strong></h5>
                                     <StarRatings
                                     rating={this.state.rating}
@@ -104,27 +118,15 @@ export default class Details extends Component {
                                     starDimension="30px"
                                     name='rating1'
                                     />
-                                    {/* <StarRatingComponent 
-                                    name="rate1" 
-                                    starCount={5}
-                                    value={this.state.rating}
-                                    onStarClick={this.onStarClick.bind(this)}
-                                    /> */}
-                                
+                                </div>  
                                 </div>
 
-                            </div>
-                            
-                            <div className="row">
-                                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-
-                                    <h3><strong>About Movie</strong></h3>
-                                    <p>{description}</p>
+                                    
                                 </div>
 
                             </div>
 
-                        </div>
+                        
                         </DetailsWrapper>
                     )
                 }
@@ -153,6 +155,7 @@ const DetailsWrapper=styled.div`
     box-shadow:4px 2px 5px 0px rgba(0,0,0,0.2);
 }
 .details{
+    font-family:"Permanent Marker";
     padding:20px;
     transition:all 1s linear;
     border:transparent;

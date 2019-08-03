@@ -143,14 +143,12 @@ export default class  extends Component {
             </div>
             <div>
                 <label className="Label">Actors</label>
-                <select className="Input" type="text" value={this.state.actors} onChange={this.handleactorschange} multiple>
-                    
-                    
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3} >3</option>
-                    <option value={4} >4</option>
-                    <option value={5} >5</option>
+                <select className="Input" type="text" value={this.state.actors} onChange={this.handleactorschange} multiple>  
+                    <option value={1}>Daniel Radcliffe</option>
+                    <option value={2}>Jodie Foster</option>
+                    <option value={3} >Anthony Hopkins</option>
+                    <option value={4} >Emma Watson</option>
+                    <option value={5} >John Doe</option>
                 </select>
             </div>
             <div>

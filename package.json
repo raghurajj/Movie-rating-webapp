@@ -2,6 +2,7 @@
   "name": "movierating",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://raghurajj.github.io/Movie-rating-webapp",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-social": "^5.1.1",
@@ -19,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

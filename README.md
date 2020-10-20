@@ -1,3 +1,5 @@
+### You can visit the website by [clicking here](https://raghurajj.github.io/Movie-rating-webapp/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
